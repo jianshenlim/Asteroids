@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(0, 0, 0);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="asteroids.js"></script>
+    </head>
+    <body>
+        <h1>Asteroids</h1>
+        <p> W: accelerate | A,D: turn | S: stop | Spacebad: shoot | E: bomb</p>
+        <p> Every 100 points increases level which increases the number of asteroids, and amount of lives by 1</p>
+        <p> Aliens spawn in random corners every 20 seconds, kill them to drop powerups</p>
+        <p> Power up types: P: Triple Shot | B: Bomb | S: Shield</p>
+
+        <svg id="canvas" width="600" height="600">
+        <text id ="level" x="5" y="30" font-family="ariel" font-size="25px" fill="white">LVL:</text>
+        <text id ="currentlevel" x="62" y="32" font-family="ariel" font-size="30px" fill="white">0</text>
+        <text id ="score" x="5" y="595" font-family="ariel" font-size="30px" fill="white">0</text>
+        <text id ="lives" x="555" y="30" font-family="ariel" font-size="30px" fill="white">0</text>
+        <text id ="game" x="210" y="275" font-family="ariel" font-size="80px" fill="black">Game</text>
+        <text id ="over" x="220" y="335" font-family="ariel" font-size="80px" fill="black">Over</text>
+        <text id ="bomb" x="555" y="595" font-family="ariel" font-size="30px" fill="white">0</text>
+        
+        
+
+    </body>
+</html>
